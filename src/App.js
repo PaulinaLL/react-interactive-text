@@ -13,12 +13,19 @@ class App extends React.Component {
     };
 
     this.parentTrigger = this.parentTrigger.bind(this);
+    this.showForm = this.showForm.bind(this);
   }
-
   parentTrigger(wordsArray) {
     this.setState({
       words: wordsArray,
       showResult: wordsArray.length >= 3 ? true : false,
+    });
+  }
+
+  showForm() {
+    this.setState({
+      words: [],
+      showResult: false,
     });
   }
 
@@ -27,7 +34,7 @@ class App extends React.Component {
       <div className="App">
         <main className="App-main">
           {this.state.showResult ? (
-            <Message words={this.state.words} />
+            <Message words={this.state.words} showForm={this.showForm} />
           ) : (
             <Form parentTrigger={this.parentTrigger} />
           )}

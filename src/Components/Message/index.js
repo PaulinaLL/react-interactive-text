@@ -8,6 +8,7 @@ class Message extends React.Component {
   render() {
     return (
       <div className="cover">
+        <button onClick={this.props.showForm}>X</button>
         <h2>
           I am a <span>{this.props.words}</span>
         </h2>
