@@ -1,4 +1,16 @@
+## Let's boost up our ego! 
+
+Write some **nice** words words about yourself, click on the show button and watch the words about you being displayed one for every second.
+
+![form](form.jpeg)
+
+You can close the message with the "X" button and start from the beggining.
+
+![message](message.jpeg)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+To run this project on your maschine remember to get the necessary dependencies with `npm install` in the project directory and use the available scripts below:
 
 ## Available Scripts
 
