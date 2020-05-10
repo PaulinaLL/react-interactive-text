@@ -50,7 +50,9 @@ class Form extends React.Component {
         ></input>
         {this.state.noError ? "" : <p>Add at least 3 words to continue</p>}
         <div className="buttons">
-          <button onClick={this.showMessage}>Show me the message</button>
+          <button type="button" onClick={this.showMessage}>
+            Show me the message
+          </button>
           <button onClick={this.addWordClick}>Add new word</button>
         </div>
       </form>
