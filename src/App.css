@@ -3,11 +3,81 @@
 }
 
 .App-main {
+  background-color: #ee9541;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: black;
+}
+form {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.cover {
+  background-color: rgb(129, 62, 114);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coverContentWrapper {
+  position: relative;
+  width: 300px;
+}
+
+span {
+  background-color: rgb(255, 174, 0);
+  border-top: 5px solid rgb(74, 19, 163);
+  border-bottom: 5px solid rgb(74, 19, 163);
+  padding: 5px 10px;
+  position: relative;
+  display: inline-block;
+  transform: skewX(-10deg);
+}
+
+button {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #ee9541;
+  font-size: 14px;
+}
+button:nth-of-type(1) {
+  background-color: white;
+}
+button:nth-of-type(2) {
+  background-color: #ee9541;
   color: white;
+}
+
+.backToForm {
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  font-size: 16px;
+  position: absolute;
+  top: -40px;
+  right: 0px;
+  background-color: red;
+}
+
+label,
+input,
+p {
+  margin: 5px;
+}
+
+p {
+  font-size: 12px;
+  color: red;
+  text-align: left;
+}
+label {
+  font-size: large;
 }
